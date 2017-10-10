@@ -17,7 +17,7 @@ dependencies = [
     ('CMake', '3.5.0'),
     ('spglib', '1.7.3'), 
     ('GSL', '2.1'),   
-    ('magma', '2.0.0'), 
+    ('magma', '2.2.0'), 
     ('gtest', '1.8.0'), 
     ('cudatoolkit/8.0.61_2.4.3-6.0.4.0_3.1__gb475d12', EXTERNAL_MODULE), 
     ('cray-hdf5', EXTERNAL_MODULE),
