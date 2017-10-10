@@ -1,0 +1,28 @@
+# Built with EasyBuild version 2.8.1 on 2016-06-16_13-59-14
+easyblock = 'Bundle'
+
+name = 'DCA++'
+version = '1.1'
+
+#consider building everything with eb:
+#preinstallopts: change build_directory
+#disable clean build directory
+
+homepage = 'http://www.itp.phys.ethz.ch/people/schulthess'
+description = """This modules bundles all the dependencies for DCA++, the best DCA ever"""
+
+toolchain = {'name': 'dummy', 'version': 'dummy'}
+
+dependencies = [
+    ('CMake', '3.3.1'),
+    ('spglib', '1.7.3'), 
+    ('NFFT', '3.3.0'), 
+    ('GSL', '2.1'),   
+    ('magma', '2.0.0'), 
+    ('gtest', '1.7.0'), 
+    ('cudatoolkit/8.0.61_2.4.3-6.0.4.0_3.1__gb475d12', EXTERNAL_MODULE), 
+    ('cray-hdf5', EXTERNAL_MODULE),
+]
+
+moduleclass = 'phys'
+
