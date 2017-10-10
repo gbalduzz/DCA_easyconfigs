@@ -1,22 +1,25 @@
 # Built with EasyBuild version 2.7.0 on 2016-03-27_20-25-53
 # Built with EasyBuild version 2.5.0 on 2016-01-22_09-08-42
-easyblock = "Tarball"
+easyblock = "CMakeMake"
 
 name = 'gtest'
-version = '1.7.0'
+version = '1.8.0'
 
 homepage = 'https://code.google.com/p/googletest/'
 description = "Google's framework for writing C++ tests on a variety of platforms"
 
 toolchain = {'name': 'dummy', 'version': 'dummy'}
 
-sources = [SOURCE_ZIP]
-source_urls = ['https://googletest.googlecode.com/files']
+source_urls = ['https://github.com/google/googletest/archive']
+sources = ['release-%(version)s.zip']
 
-sanity_check_paths={
+builddependencies = [('CMake', '3.5.0')]
+
+sanity_check_paths = {
     'files': ['CMakeLists.txt', ],
-    'dirs': ['include', 'src'],
+    'dirs': ['googletest/include', 'googletest/src'],
 }
+
 
 moduleclass = 'devel'
 
