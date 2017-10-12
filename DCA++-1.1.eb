@@ -15,7 +15,6 @@ toolchain = {'name': 'dummy', 'version': 'dummy'}
 
 dependencies = [
     ('spglib', '1.7.3'), 
-    ('GSL', '2.1'),   
     ('gtest', '1.8.0'), 
     ('CMake', EXTERNAL_MODULE),
     ('magma', EXTERNAL_MODULE), 
