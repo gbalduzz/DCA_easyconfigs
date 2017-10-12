@@ -14,7 +14,6 @@ description = """This modules bundles all the dependencies for DCA++, the best D
 toolchain = {'name': 'dummy', 'version': 'dummy'}
 
 dependencies = [
-    ('GSL', '2.1'),   
     ('CMake', EXTERNAL_MODULE),
     ('magma', EXTERNAL_MODULE), 
     ('cudatoolkit/8.0.61_2.4.3-6.0.4.0_3.1__gb475d12', EXTERNAL_MODULE), 
