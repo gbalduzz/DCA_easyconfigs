@@ -24,5 +24,7 @@ dependencies = [
     ('fftw', EXTERNAL_MODULE), 
 ]
 
+modextravars = {'CUDA_LIB_PATH': '/opt/cray/nvidia/default/lib64'}
+
 moduleclass = 'phys'
 
